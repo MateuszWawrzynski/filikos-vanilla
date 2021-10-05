@@ -1,0 +1,30 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: .625rem;
+
+	body {
+		box-sizing: border-box;
+		background-color: var(--color-whiteish);
+		font-family: 'Noto Sans';
+		overflow-x: hidden; //?
+	
+		i {
+			font-family: 'fontello';
+			font-size: 1em;
+			font-style: normal;
+			text-decoration: none;
+		}
+
+		input::-webkit-outer-spin-button,
+		input::-webkit-inner-spin-button,
+		input[type=number] {
+			-webkit-appearance: none;
+			-moz-appearance: textfield;
+			margin: 0;
+		}
+	}
+}
