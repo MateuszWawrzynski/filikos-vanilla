@@ -10,7 +10,8 @@ html {
 		box-sizing: border-box;
 		background-color: var(--color-whiteish);
 		font-family: 'Noto Sans';
-		overflow-x: hidden; //?
+		overflow-x: hidden;
+		min-height: 1200px; // temp
 	
 		i {
 			font-family: 'fontello';

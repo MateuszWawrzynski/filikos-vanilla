@@ -11,6 +11,7 @@ html body {
   background-color: var(--color-whiteish);
   font-family: "Noto Sans";
   overflow-x: hidden;
+  min-height: 1200px;
 }
 html body i {
   font-family: "fontello";
