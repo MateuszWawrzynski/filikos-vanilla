@@ -29,3 +29,11 @@ html body input[type=number] {
   -moz-appearance: textfield;
   margin: 0;
 }
+@media (min-width: 1200px) {
+  html body .productArea {
+    max-width: 1170px;
+    margin: auto;
+    display: grid;
+    grid-template-areas: "gallery buyform" "versions versions";
+  }
+}

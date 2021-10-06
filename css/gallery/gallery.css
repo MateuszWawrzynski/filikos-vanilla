@@ -1,0 +1,100 @@
+/* Color palette */
+/* Global margins */
+/* Desktop transformation */
+.gallery {
+  position: relative;
+  background-color: white;
+  max-height: 300px;
+  padding: 0 1.3rem;
+  overflow: hidden;
+}
+@media (min-width: 1200px) {
+  .gallery {
+    grid-area: gallery;
+    margin-right: 1.6em;
+    max-height: 477px;
+    padding: 0;
+    padding-left: 0.2em;
+    display: flex;
+  }
+}
+.gallery .gallery-photo {
+  width: 115%;
+  vertical-align: bottom;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: translate(-10%, -8%);
+}
+@media (min-width: 1200px) {
+  .gallery .gallery-photo {
+    width: 78%;
+    transform: translate(0, 6%);
+  }
+}
+.gallery .gallery-thumbs {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .gallery .gallery-thumbs {
+    width: 16.5%;
+    padding: 1.2em 0.1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+.gallery .gallery-thumbs > img {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+.gallery .gallery-thumbs > img:hover {
+  border-color: #FCB243;
+}
+.gallery .gallery-thumbs .gallery-thumbs-more {
+  width: 70%;
+  padding: 1.2em 0;
+  text-align: center;
+  border: 1px solid #EDEDED;
+  color: black;
+}
+.gallery .gallery-thumbs .gallery-thumbs-more :first-child {
+  font-size: 1.9em;
+}
+.gallery .gallery-thumbs .gallery-thumbs-more :last-child {
+  font-size: 1.3em;
+}
+.gallery .gallery-bestseller {
+  display: none;
+  -webkit-animation: blink 1.5s ease-in infinite alternate;
+          animation: blink 1.5s ease-in infinite alternate;
+}
+@media (min-width: 1200px) {
+  .gallery .gallery-bestseller {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 4.7%;
+    right: 3.5%;
+    width: 70px;
+    height: 70px;
+    border-radius: 90px;
+    background-color: #FCB243;
+    color: white;
+    font-family: "Amatic SC";
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+@-webkit-keyframes blink {
+  to {
+    transform: scale(1.2);
+  }
+}
+@keyframes blink {
+  to {
+    transform: scale(1.2);
+  }
+}
