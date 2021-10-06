@@ -18,6 +18,7 @@
 		<link rel="stylesheet" href="css/header/header.css">
 		<link rel="stylesheet" href="css/breadcrumbs/breadcrumbs.css">
 		<link rel="stylesheet" href="css/gallery/gallery.css">
+		<link rel="stylesheet" href="css/buyform/buyform.css">
 	</head>
 	<body>
 		<!-- Header (TODO: needs pixel perfect improvement!) -->
@@ -98,8 +99,62 @@
 					<span class="gallery-bestseller">BESTSELLER</span>
 					<img class="gallery-photo" src='./assets/photos/photo_1.png' alt='gallery' />	
 				</section>
-				<!--  -->
+				<!-- BuyForm (TODO: add form label!) -->
+				<section class="buyform">
+					<div class="buyform-header">
+						<div class="buyform-header-title">
+							<h1>Bambusowe Naczynia<br /> dla Dzieci Ambition Junior Alex</h1>
+							<small class="buyform-header-title-id">5904134571342</small>
+						</div>
+						<img class="buyform-header-creator" src='./assets/icons/Image 1.svg' alt='creator-logo' />
+					</div>
+					<div class="buyform-colors">
+						<h2>Kolory</h2>
+						<div class="buyform-colors-options">
+							<img class="buyform-colors-options-active" src='./assets/icons/Ellipse 13.svg' alt='version-red' onClick="buyForm_selectColor(event)" />
+							<img src='./assets/icons/Ellipse 17.svg' alt='version-gray' onClick="buyForm_selectColor(event)" />
+							<img src='./assets/icons/Ellipse 19.svg' alt='version-blue' onClick="buyForm_selectColor(event)" />
+						</div>
+					</div>
+					<div class="buyform-availability">
+						<p>Dostępny 3 szt na magazynie</p>
+						<a href='/'>Sprawdź czas i koszt dostawy</a>
+					</div>
+					<div class="buyform-price">
+						<span class="buyform-price-value">
+							29,00 <span>zł / szt.</span>
+						</span>
+						<span class="buyform-price-discount">39,00 zł</span>
+						<span class="buyform-price-label" title='Ten produkt został przeceniony!'>PROMOCJA</span>
+						<a class="buyform-price-instalments" href='/'>Kup na raty</a>
+					</div>
+					<div class="buyform-purchase">
+						<a class="buyform-purchase-instalments" href='/'>Kup na raty</a>
+						<div class="buyform-purchase-form">
+							<input class="buyform-purchase-form-quantity" type='number' value='1' />
+							<button onClick="buyForm_purchase(event)" title='Dodaj ten produkt do koszyka'>DODAJ OD KOSZYKA</button>
+						</div>
+						<a class="buyform-purchase-saveLater" href='/'>Do listy zakupowej</a>
+					</div>
+					<ul class="buyform-info">
+						<li>
+							<i className='icon-group-4320'></i>
+							<p><strong>Łatwy zwrot towaru</strong> w ciągu 14 dni</p>
+						</li>
+						<li>
+							<i className='icon-box-(2)'>&nbsp;</i>
+							<p><strong>Darmowa dostawa</strong> od 599 zł</p>
+						</li>
+						<li>
+							<i className='icon-shipped-(2)'></i>
+							<p><strong>Szybka dostawa w 48h</strong></p>
+						</li>
+					</ul>
+				</section>
 			</div>
 		</main>
+
+		<script src="js/buyForm_selectColor.js" async></script>
+		<script src="js/buyForm_purchase.js" async></script>
 	</body>
 </html>

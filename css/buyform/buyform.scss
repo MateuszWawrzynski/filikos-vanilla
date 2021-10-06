@@ -1,0 +1,324 @@
+@import '../variables.scss';
+
+.buyform {
+	background-color: white;
+	padding: 0 $mobile-page-margins;
+	padding-left: calc(#{$mobile-page-margins} + .2em);
+
+	@media (min-width: $desktop-width-transform) {
+		grid-area: buyform;
+		margin-left: .6em;
+		max-height: 477px;
+		padding: 0;
+		padding-top: .5em;
+	}
+
+	.buyform-header {
+		display: flex;
+		flex-direction: column;
+		padding-top: 1.6em;
+
+		@media (min-width: $desktop-width-transform) {
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: flex-start;
+			padding-left: 3.2em;
+			padding-right: .6em;
+		}
+
+		.buyform-header-title {
+			order: 2;
+
+			@media (min-width: $desktop-width-transform) {
+				order: 0;
+			}
+			
+			> h1 {
+				margin-bottom: .2em;
+				font-size: 2em;
+				font-weight: normal;
+			}
+
+			.buyform-header-title-id {
+				margin-left: .15em;
+				letter-spacing: .01em;
+				font-size: 1.1em;
+				font-weight: bold;
+			}
+		}
+
+		.buyform-header-creator {
+			order: 1;
+			width: 35%;
+
+			@media (min-width: $desktop-width-transform) {
+				width: 26%;
+			}
+		}
+	}
+
+	.buyform-colors {
+		margin-top: 2em;
+		margin-left: .3em;
+		letter-spacing: .05em;
+		font-size: .8em;
+
+		@media (min-width: $desktop-width-transform) {
+			margin-top: 1.9em;
+			padding-left: 4em;
+		}
+		
+		.buyform-colors-options {
+			margin-top: 1.4em;
+
+			> img {
+				margin-right: 1em;
+				padding: .3em;
+				cursor: pointer;
+			}
+
+			.buyform-colors-options-active {
+				border: 1px solid black;
+				border-radius: 90px;
+			}
+		}
+	}
+
+	.buyform-availability {
+		margin-top: 2.2em;
+
+		@media (min-width: $desktop-width-transform) {
+			padding-left: 3.2em;
+		}
+
+		> p {
+			font-size: 1.3em;
+			font-weight: bold;
+		}
+
+		> a {
+			margin-left: .05em;
+			font-size: 1.3em;
+			color: black;
+
+			transition-duration: .1s;
+			&:hover {
+				color: $color-orangeish;
+			}
+		}
+	}
+
+	.buyform-price {
+		margin-top: .8em;
+
+		@media (min-width: $desktop-width-transform) {
+			padding-left: 3.2em;
+		}
+
+		.buyform-price-value {
+			font-size: 3em;
+			font-weight: bold;
+
+			:first-child {
+				font-size: .5em;
+			}
+		}
+
+		.buyform-price-discount {
+			margin-left: .4em;
+			font-size: 1.35em;
+			text-decoration: line-through;
+			color: $color-blackish;
+		}
+
+		.buyform-price-label {
+			// margin-top: .5em;
+			margin-left: .9em;
+			padding: .1em .9em;
+			border-radius: 90px;
+
+			background-color: red;
+			text-align: center;
+			color: white;
+			font-family: 'Amatic SC';
+			font-size: 1.8em;
+
+			animation: blink 1.5s ease-out infinite alternate;
+			@keyframes blink {
+				0% { color: red; }
+				50% { color: white; }
+				75% { color: white; }
+				100% { color: white; }
+			}
+		}
+
+		.buyform-price-instalments {
+			display: none;
+
+			@media (min-width: $desktop-width-transform) {
+				display: inline-block;
+				font-size: 1.3em;
+				color: black;
+				margin-left: 1.6em;
+			}		
+
+			transition-duration: .1s;
+			&:hover {
+				color: $color-orangeish;
+			}
+		}
+	}
+
+	.buyform-purchase {
+		margin-top: .5em;	
+		padding-bottom: 1.6em;
+
+		@media (min-width: $desktop-width-transform) {
+			padding-left: 3.2em;
+			padding-bottom: 0;
+			display: flex;
+			align-items: center;
+		}
+
+		.buyform-purchase-instalments {
+			font-size: 1.3em;
+			color: black;
+
+			@media (min-width: $desktop-width-transform) {
+				display: none;
+			}
+		}
+
+		.buyform-purchase-saveLater {
+			width: 5em;
+
+			transition-duration: .1s;
+			&:hover {
+				color: $color-orangeish;
+			}
+		}
+
+		.buyform-purchase-form {
+			margin: 1.6em 0 1.8em;
+
+			@media (min-width: $desktop-width-transform) {
+				margin: .7em 0 1.8em;
+				display: inline-block;
+			}
+
+			.buyform-purchase-form-quantity {
+				position: relative;
+				width: 3.4em;
+				aspect-ratio: 1;
+				border: none;
+				border-radius: 90px;
+				background-color: $color-whiteish;
+				outline: none;
+				text-align: center;
+				font-size: 1.6em;
+			}
+
+			> button {
+				position: relative;
+				margin-left: 1em;
+				height: 4em;
+				padding: 0 5.5em;
+				border: none;
+				border-radius: 90px;
+				background-color: $color-blueish;
+				outline: none;
+				font-size: 1.3em;
+				font-family: 'Noto Sans';
+				font-weight: bold;
+				color: white;
+
+				@media (min-width: $desktop-width-transform) {
+					margin-left: 1em;
+					margin-right: .8em;
+					padding: 0 4.95em 0 6.4em;
+					cursor: pointer;
+					z-index: 1;
+
+					&:hover {
+						text-decoration: underline;
+					}
+
+					&.buyform-purchase-form-quantity-button-animate:before {
+						content: 'DODANO!';
+						position: absolute;
+						top: 0;
+						left: 0;
+						transform: translateY(-25%);
+						width: 100%;
+						height: 100%;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						border-radius: 90px;
+						background-color: $color-orangeish;
+						opacity: 0;
+	
+						animation: submit 1s ease-out;
+						@keyframes submit {
+							from {
+								// transform: translateY(-25%);
+								opacity: 1;
+							}
+							to {
+								transform: translateY(-100%);
+								opacity: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.buyform-info {
+		border-top: 1px solid $color-grayish;
+		border-bottom: 1px solid $color-grayish;
+		padding: 1.6em 0;
+		list-style-type: none;
+		font-size: 1.2em;
+
+		@media (min-width: $desktop-width-transform) {
+			padding-top: 0;
+			padding-left: 3.1em; 
+			border: 0;
+		}
+
+		> li {
+			margin-bottom: .55em;
+
+			animation: carousel 4s infinite;
+			&:nth-child(1) { animation-delay: 0; }	// 0-1 s
+			&:nth-child(2) { animation-delay: 1s; } // 1-2 s
+			&:nth-child(3) { animation-delay: 2s; } // 2-3 s
+				// pause							// 3-4 s
+
+			@keyframes carousel {
+				0% { color: $color-orangeish; }
+				25% { color: $color-orangeish; }
+				26% { color: black; }
+				100% { color: black; }
+			}
+			
+			> i,
+			> p {
+				display: inline-block;
+			}
+
+			> i {
+				font-family: 'fontello';
+				font-style: normal;
+				font-size: 1.5em;
+				width: 1.8em;
+			}
+			
+			> p {
+				letter-spacing: .04em;
+			}
+		}
+	}
+}

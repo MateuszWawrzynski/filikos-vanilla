@@ -87,9 +87,9 @@
 			font-weight: bold;
 		}
 	
-		@keyframes blink {
+		@keyframes bestseller-blink {
 			to { transform: scale(1.2); }
 		}
-		animation: blink 1.5s ease-in infinite alternate;
+		animation: bestseller-blink 1.5s ease-in infinite alternate;
 	}
 }

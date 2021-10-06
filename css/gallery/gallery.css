@@ -67,8 +67,8 @@
 }
 .gallery .gallery-bestseller {
   display: none;
-  -webkit-animation: blink 1.5s ease-in infinite alternate;
-          animation: blink 1.5s ease-in infinite alternate;
+  -webkit-animation: bestseller-blink 1.5s ease-in infinite alternate;
+          animation: bestseller-blink 1.5s ease-in infinite alternate;
 }
 @media (min-width: 1200px) {
   .gallery .gallery-bestseller {
@@ -88,12 +88,12 @@
     font-weight: bold;
   }
 }
-@-webkit-keyframes blink {
+@-webkit-keyframes bestseller-blink {
   to {
     transform: scale(1.2);
   }
 }
-@keyframes blink {
+@keyframes bestseller-blink {
   to {
     transform: scale(1.2);
   }

@@ -2,8 +2,6 @@
 /* Global margins */
 /* Desktop transformation */
 .breadcrumbs {
-  display: flex;
-  justify-content: center;
   padding: 1em 0;
   font-size: 1.2rem;
 }
@@ -14,6 +12,10 @@
     max-width: 1170px;
     margin: auto;
   }
+}
+.breadcrumbs .breadcrumbs-mobile {
+  display: flex;
+  justify-content: center;
 }
 @media (min-width: 1200px) {
   .breadcrumbs .breadcrumbs-mobile {
