@@ -19,6 +19,7 @@
 		<link rel="stylesheet" href="css/breadcrumbs/breadcrumbs.css">
 		<link rel="stylesheet" href="css/gallery/gallery.css">
 		<link rel="stylesheet" href="css/buyform/buyform.css">
+		<link rel="stylesheet" href="css/versions/versions.css">
 	</head>
 	<body>
 		<!-- Header (TODO: needs pixel perfect improvement!) -->
@@ -151,10 +152,65 @@
 						</li>
 					</ul>
 				</section>
+				<!-- Versions -->
+				<section class="versions">
+					<h1>Dostępne warianty</h1>
+					<div class="versions-content">
+						<!-- Version 1 (TODO: add form label!) -->
+						<article class="version">
+							<img class="version-photo" src="./assets/photos/version-1.png" alt='version-1' />
+							<div class="version-content">
+								<h2 class="version-content-title">Bambusowe Naczynia<br /> dla Dzieci Ambition Junior Alex</h2>
+								<p class="version-content-availability">
+									<img src='./assets/icons/Ellipse 25.svg' alt='green-dot' />
+									<span>Dostępny 3 szt.</span>
+								</p>
+								<p class="version-content-price">29,00 zł / szt.</p>
+								<div class="version-content-form">
+									<input class="version-content-form-quantity" type='number' value='1' />
+									<button onClick='version_purchase(event)' title='Dodaj ten produkt do koszyka'>DO KOSZYKA</button>
+								</div>
+							</div>
+						</article>
+						<!-- Version 2 (TODO: add form label!) -->
+						<article class="version">
+							<img class="version-photo" src="./assets/photos/version-2.png" alt='version-2' />
+							<div class="version-content">
+								<h2 class="version-content-title">Bambusowe Naczynia<br /> dla Dzieci Ambition Junior Alex</h2>
+								<p class="version-content-availability">
+									<img src='./assets/icons/Ellipse 25.svg' alt='green-dot' />
+									<span>Dostępny 3 szt.</span>
+								</p>
+								<p class="version-content-price">49,00 zł / szt.</p>
+								<div class="version-content-form">
+									<input class="version-content-form-quantity" type='number' value='1' />
+									<button onClick='version_purchase(event)' title='Dodaj ten produkt do koszyka'>DO KOSZYKA</button>
+								</div>
+							</div>
+						</article>
+						<!-- Version 3 (TODO: add form label!) -->
+						<article class="version">
+							<img class="version-photo" src="./assets/photos/version-3.png" alt='version-3' />
+							<div class="version-content">
+								<h2 class="version-content-title">Bambusowe Naczynia<br /> dla Dzieci Ambition Junior Alex</h2>
+								<p class="version-content-availability">
+									<img src='./assets/icons/Ellipse 25.svg' alt='green-dot' />
+									<span>Dostępny 3 szt.</span>
+								</p>
+								<p class="version-content-price">79,00 zł / szt.</p>
+								<div class="version-content-form">
+									<input class="version-content-form-quantity" type='number' value='1' />
+									<button onClick='version_purchase(event)' title='Dodaj ten produkt do koszyka'>DO KOSZYKA</button>
+								</div>
+							</div>
+						</article>
+					</div>
+				</section>
 			</div>
 		</main>
 
 		<script src="js/buyForm_selectColor.js" async></script>
 		<script src="js/buyForm_purchase.js" async></script>
+		<script src="js/version_purchase.js" async></script>
 	</body>
 </html>

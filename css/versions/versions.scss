@@ -1,0 +1,167 @@
+@import '../variables.scss';
+
+.versions {
+	grid-area: versions;
+	padding: .8em calc(#{$mobile-page-margins} + .2em);
+	background-color: white;
+
+	@media (min-width: $desktop-width-transform) {
+		margin-top: 2em;
+		padding: 2.1em 0 3.5em;
+		padding-left: 3.1em;
+	}
+
+	> h1 {
+		margin-top: 1.1em;
+		font-size: 1.8em;
+		font-weight: normal;
+
+		@media (min-width: $desktop-width-transform) {
+			margin-top: .1em;
+			margin-left: .1em;
+		}
+	}
+
+	.versions-content {
+		display: flex;
+		flex-direction: column;
+		margin-left: .8em;
+		margin-top: 2.3em;
+
+		@media (min-width: $desktop-width-transform) {
+			flex-direction: row;
+			margin-left: 0;
+			margin-top: 0;
+		}
+
+		.version {
+			display: flex;
+			padding-bottom: 4.1em;
+		
+			@media (min-width: $desktop-width-transform) {
+				padding: 2.4em 3.2em .4em 2em;
+				border-right: 1px solid $color-grayish;
+		
+				&:first-of-type {
+					padding-left: 0;
+				}
+				&:last-of-type {
+					padding-left: 2.9em;
+					padding-right: 0;
+					border: 0;
+				}
+			}
+		
+			.version-photo {
+				margin-top: .4em;
+			}
+		
+			.version-content {
+				margin-left: 2.4em;
+		
+				.version-content-title {
+					margin-left: .3em;
+					font-size: 1.3em;
+					font-weight: normal;
+				}
+		
+				.version-content-availability {
+					margin-top: .8em;
+					margin-left: .4em;
+		
+					> img {
+						margin-right: .6em;
+		
+						animation: version-blink 5s ease-in infinite;
+						@keyframes version-blink {
+							0% {
+								transform: scale(1.2);
+								filter: brightness(1.5);
+							}
+							10% {
+								transform: none;
+								filter: none;
+							}
+						}
+					}
+		
+					> span {
+						font-size: 1.3em;
+					}
+				}
+		
+				.version-content-price {
+					margin-top: .25em;
+					margin-left: .25em;
+					font-size: 1.5em;
+					font-weight: bold;
+				}
+		
+				.version-content-form {
+					margin-top: .7em;
+					
+					.version-content-form-quantity {
+						width: 2.6em;
+						aspect-ratio: 1;
+						border: none;
+						border-radius: 90px;
+						background-color: $color-whiteish;
+						outline: none;
+						text-align: center;
+						font-size: 1.6em;
+					}
+		
+					> button {
+						position: relative;
+						margin-left: .45em;
+						height: 3.2em;
+						padding: 0 1.2em;
+						border: none;
+						border-radius: 90px;
+						background-color: $color-blueish;
+						outline: none;
+						font-size: 1.2em;
+						font-family: 'Noto Sans';
+						font-weight: bold;
+						color: white;
+		
+						cursor: pointer;
+						z-index: 1;
+		
+						&:hover {
+							text-decoration: underline;
+						}
+		
+						&.version-content-form-quantity-button-animate:before {
+							content: 'DODANO!';
+							position: absolute;
+							top: 0;
+							left: 0;
+							transform: translateY(-25%);
+							width: 100%;
+							height: 100%;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							border-radius: 90px;
+							background-color: $color-orangeish;
+							opacity: 0;
+		
+							animation: version-submit 1s ease-out;
+							@keyframes version-submit {
+								from {
+									// transform: translateY(-25%);
+									opacity: 1;
+								}
+								to {
+									transform: translateY(-100%);
+									opacity: 0;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

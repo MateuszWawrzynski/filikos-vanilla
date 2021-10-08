@@ -132,10 +132,10 @@
   color: white;
   font-family: "Amatic SC";
   font-size: 1.8em;
-  -webkit-animation: blink 1.5s ease-out infinite alternate;
-          animation: blink 1.5s ease-out infinite alternate;
+  -webkit-animation: buyform-blink 1.5s ease-out infinite alternate;
+          animation: buyform-blink 1.5s ease-out infinite alternate;
 }
-@-webkit-keyframes blink {
+@-webkit-keyframes buyform-blink {
   0% {
     color: red;
   }
@@ -149,7 +149,7 @@
     color: white;
   }
 }
-@keyframes blink {
+@keyframes buyform-blink {
   0% {
     color: red;
   }
@@ -265,10 +265,10 @@
     border-radius: 90px;
     background-color: #FCB243;
     opacity: 0;
-    -webkit-animation: submit 1s ease-out;
-            animation: submit 1s ease-out;
+    -webkit-animation: buyform-submit 1s ease-out;
+            animation: buyform-submit 1s ease-out;
   }
-  @-webkit-keyframes submit {
+  @-webkit-keyframes buyform-submit {
     from {
       opacity: 1;
     }
@@ -277,7 +277,7 @@
       opacity: 0;
     }
   }
-  @keyframes submit {
+  @keyframes buyform-submit {
     from {
       opacity: 1;
     }
@@ -303,8 +303,8 @@
 }
 .buyform .buyform-info > li {
   margin-bottom: 0.55em;
-  -webkit-animation: carousel 4s infinite;
-          animation: carousel 4s infinite;
+  -webkit-animation: buyform-carousel 4s infinite;
+          animation: buyform-carousel 4s infinite;
 }
 .buyform .buyform-info > li:nth-child(1) {
   -webkit-animation-delay: 0;
@@ -318,7 +318,7 @@
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
-@-webkit-keyframes carousel {
+@-webkit-keyframes buyform-carousel {
   0% {
     color: #FCB243;
   }
@@ -332,7 +332,7 @@
     color: black;
   }
 }
-@keyframes carousel {
+@keyframes buyform-carousel {
   0% {
     color: #FCB243;
   }

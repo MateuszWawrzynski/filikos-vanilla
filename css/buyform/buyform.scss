@@ -143,8 +143,8 @@
 			font-family: 'Amatic SC';
 			font-size: 1.8em;
 
-			animation: blink 1.5s ease-out infinite alternate;
-			@keyframes blink {
+			animation: buyform-blink 1.5s ease-out infinite alternate;
+			@keyframes buyform-blink {
 				0% { color: red; }
 				50% { color: white; }
 				75% { color: white; }
@@ -258,8 +258,8 @@
 						background-color: $color-orangeish;
 						opacity: 0;
 	
-						animation: submit 1s ease-out;
-						@keyframes submit {
+						animation: buyform-submit 1s ease-out;
+						@keyframes buyform-submit {
 							from {
 								// transform: translateY(-25%);
 								opacity: 1;
@@ -291,13 +291,13 @@
 		> li {
 			margin-bottom: .55em;
 
-			animation: carousel 4s infinite;
+			animation: buyform-carousel 4s infinite;
 			&:nth-child(1) { animation-delay: 0; }	// 0-1 s
 			&:nth-child(2) { animation-delay: 1s; } // 1-2 s
 			&:nth-child(3) { animation-delay: 2s; } // 2-3 s
 				// pause							// 3-4 s
 
-			@keyframes carousel {
+			@keyframes buyform-carousel {
 				0% { color: $color-orangeish; }
 				25% { color: $color-orangeish; }
 				26% { color: black; }
