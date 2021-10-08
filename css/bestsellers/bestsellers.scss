@@ -1,0 +1,139 @@
+@import '../variables.scss';
+
+.bestsellers {
+	margin-top: 3.8em;
+	padding-bottom: 1em;
+	text-align: center;
+
+	// &.second {
+	// 	padding-bottom: .8em;
+
+	// 	.content {
+	// 		padding-bottom: 0;
+	// 	}
+		
+	// 	@media (min-width: $desktop-width-transform) {
+	// 		transform: translateY(-.8em);
+	// 		padding-bottom: 4.6em;
+	// 	}
+	// }
+
+	.bestsellers-header-mobile {
+		position: relative;
+		padding-left: .5em;
+		padding-bottom: .95em;
+		font-size: 2.5em;
+		font-weight: normal;
+
+		@media (min-width: $desktop-width-transform) {
+			display: none;
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 8.5em;
+			height: 1px;
+			background-color: orange;
+		}
+
+		// @media (min-width: $desktop-width-transform) {
+		// 	margin-top: 2.25em;
+		// 	padding-left: 0;
+		// 	transform: translateX(-.25em);
+		// }
+	}
+
+	.bestsellers-header-desktop {
+		display: none;
+		position: relative;
+		// padding-left: .5em;
+		margin-top: 2.25em;
+		padding-bottom: .95em;
+		transform: translateX(-.25em);
+		font-size: 2.5em;
+		font-weight: normal;
+
+		@media (min-width: $desktop-width-transform) {
+			display: block;
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 8.5em;
+			height: 1px;
+			background-color: orange;
+		}
+	}
+
+	.bestsellers-content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding: 2em 1.9em;
+
+		@media (min-width: $desktop-width-transform) {
+			// padding: 2.5em 36.5em;
+			padding: 2.5em 0;
+			max-width: $desktop-wrapper-width;
+			margin: auto;
+			transform: translateX(-.75%);
+		}
+
+		.bestseller {
+			width: 48%;
+			margin: 1em 0 .5em;
+			padding-bottom: 1.4em;
+			background-color: white;
+			text-align: center;
+		
+			@media (min-width: $desktop-width-transform) {
+				width: 23.6%;
+				padding-bottom: 2.8em;
+			}
+		
+			> a {
+				text-decoration: none;
+				color: black;
+		
+				> img {
+					width: 85%;
+					margin-top: 1.2em;
+					margin-bottom: 1.4em;
+			
+					@media (min-width: $desktop-width-transform) {
+						margin-top: 2em;
+						margin-bottom: 2.7em;
+					}
+				}
+			
+				> p {
+					padding: .75em 1em 0;
+					font-size: 1.3em;
+					border-top: 1px solid $color-grayish;
+			
+					@media (min-width: $desktop-width-transform) {
+						padding: 1.5em 3.1em 0;
+					}
+			
+					&:last-of-type {
+						margin-top: .7em;
+						font-weight: bold;
+						border-top: none;
+			
+						@media (min-width: $desktop-width-transform) {
+							padding-top: .7em;
+						}
+					}
+				}
+			}
+		}
+	}
+}
