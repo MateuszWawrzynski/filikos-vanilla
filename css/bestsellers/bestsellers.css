@@ -6,6 +6,18 @@
   padding-bottom: 1em;
   text-align: center;
 }
+.bestsellers.second {
+  padding-bottom: 0.8em;
+}
+.bestsellers.second .content {
+  padding-bottom: 0;
+}
+@media (min-width: 1200px) {
+  .bestsellers.second {
+    transform: translateY(-0.8em);
+    padding-bottom: 4.6em;
+  }
+}
 .bestsellers .bestsellers-header-mobile {
   position: relative;
   padding-left: 0.5em;
@@ -66,7 +78,7 @@
     transform: translateX(-0.75%);
   }
 }
-.bestsellers .bestsellers-content .bestseller {
+.bestsellers .bestsellers-content .bestsellers-content-bestseller {
   width: 48%;
   margin: 1em 0 0.5em;
   padding-bottom: 1.4em;
@@ -74,43 +86,43 @@
   text-align: center;
 }
 @media (min-width: 1200px) {
-  .bestsellers .bestsellers-content .bestseller {
+  .bestsellers .bestsellers-content .bestsellers-content-bestseller {
     width: 23.6%;
     padding-bottom: 2.8em;
   }
 }
-.bestsellers .bestsellers-content .bestseller > a {
+.bestsellers .bestsellers-content .bestsellers-content-bestseller > a {
   text-decoration: none;
   color: black;
 }
-.bestsellers .bestsellers-content .bestseller > a > img {
+.bestsellers .bestsellers-content .bestsellers-content-bestseller > a > img {
   width: 85%;
   margin-top: 1.2em;
   margin-bottom: 1.4em;
 }
 @media (min-width: 1200px) {
-  .bestsellers .bestsellers-content .bestseller > a > img {
+  .bestsellers .bestsellers-content .bestsellers-content-bestseller > a > img {
     margin-top: 2em;
     margin-bottom: 2.7em;
   }
 }
-.bestsellers .bestsellers-content .bestseller > a > p {
+.bestsellers .bestsellers-content .bestsellers-content-bestseller > a > p {
   padding: 0.75em 1em 0;
   font-size: 1.3em;
   border-top: 1px solid #EDEDED;
 }
 @media (min-width: 1200px) {
-  .bestsellers .bestsellers-content .bestseller > a > p {
+  .bestsellers .bestsellers-content .bestsellers-content-bestseller > a > p {
     padding: 1.5em 3.1em 0;
   }
 }
-.bestsellers .bestsellers-content .bestseller > a > p:last-of-type {
+.bestsellers .bestsellers-content .bestsellers-content-bestseller > a > p:last-of-type {
   margin-top: 0.7em;
   font-weight: bold;
   border-top: none;
 }
 @media (min-width: 1200px) {
-  .bestsellers .bestsellers-content .bestseller > a > p:last-of-type {
+  .bestsellers .bestsellers-content .bestsellers-content-bestseller > a > p:last-of-type {
     padding-top: 0.7em;
   }
 }
