@@ -23,6 +23,7 @@
 		<link rel="stylesheet" href="css/description/description.css">
 		<link rel="stylesheet" href="css/bestsellers/bestsellers.css">
 		<link rel="stylesheet" href="css/faq/faq.css">
+		<link rel="stylesheet" href="css/ratings/ratings.css">
 	</head>
 	<body>
 		<!-- Header (TODO: needs pixel perfect improvement!) -->
@@ -357,6 +358,134 @@
 				</aside>
 			</div>
 		</section>
+		<!-- Ratings (TODO: fix icons everywhere!) -->
+		<section class="ratings">
+			<div class="ratings-banner" data-menu-open="false" onClick="ratings_openMenu(event)">
+				<h1>Opinie o miseczka bambusowa myszka dla dzieci</h1>
+				<span>+</span>
+			</div>
+			<h1 class="ratings-header">Opinie o miseczka bambusowa myszka dla dzieci</h1>
+			<div class="ratings-content">
+				<!-- Marks -->
+				<aside class="ratings-content-marks">
+					<div class="ratings-content-marks-rating">
+						<i className='icon-star'></i>
+						<i className='icon-star'></i>
+						<i className='icon-star'></i>
+						<i className='icon-star'></i>
+						<i className='icon-star'></i>
+						<span>4.5</span>
+					</div>
+					<p class="ratings-content-marks-ratingsCounter">Liczba wystawionych opinii: 3</p>
+					<button>DODAJ SWOJĄ OPINIĘ</button>
+					<div>
+						<div class="ratings-content-marks-mark">
+							<span>5</span>
+							<i className='icon-star'></i>
+							<div class="ratings-content-marks-mark-progressBar">
+								<div style="width: 84%;"></div>
+							</div>
+							<span>(21)</span>
+						</div>
+						<div class="ratings-content-marks-mark">
+							<span>4</span>
+							<i className='icon-star'></i>
+							<div class="ratings-content-marks-mark-progressBar">
+								<div style="width: 34%;"></div>
+							</div>
+							<span>(5)</span>
+						</div>
+						<div class="ratings-content-marks-mark">
+							<span>3</span>
+							<i className='icon-star'></i>
+							<div class="ratings-content-marks-mark-progressBar">
+								<div style="width: 0%;"></div>
+							</div>
+							<span>(0)</span>
+						</div>
+						<div class="ratings-content-marks-mark">
+							<span>2</span>
+							<i className='icon-star'></i>
+							<div class="ratings-content-marks-mark-progressBar">
+								<div style="width: 0%;"></div>
+							</div>
+							<span>(0)</span>
+						</div>
+						<div class="ratings-content-marks-mark">
+							<span>1</span>
+							<i className='icon-star'></i>
+							<div class="ratings-content-marks-mark-progressBar">
+								<div style="width: 8%;"></div>
+							</div>
+							<span>(1)</span>
+						</div>
+					</div>
+					<p class="ratings-content-marks-info">Kliknij ocenę, aby filtrować opinie</p>
+				</aside>
+				<div class="ratings-comments">
+					<!-- Comment 1 -->
+					<article class="ratings-comments-comment">
+						<div class="ratings-comments-comment-rating">
+							<i className='icon-star'></i>
+							<i className='icon-star'></i>
+							<i className='icon-star'></i>
+							<i className='icon-star'></i>
+							<i className='icon-star'></i>
+							<span>5/5</span>
+						</div>
+						<p class="ratings-comments-comment-text">Towar zgodny z opisem. Szybka wysyłka. Gorąco polecam.</p>
+						<div class="ratings-comments-comment-info">
+							<p class="ratings-comments-comment-info-author">22.01.2020 Wera, Szczecin, Polska</p>
+							<p class="ratings-comments-comment-info-vote">
+								Czy ta opinia była pomocna?
+								<span><i className='icon-thumbs-up-alt'></i> Tak (3)</span>
+								<span><i className='icon-thumbs-down'></i> Nie (0)</span>
+							</p>
+						</div>
+					</article>
+					<!-- Comment 2 -->
+					<article class="ratings-comments-comment">
+						<div class="ratings-comments-comment-rating">
+							<i className='icon-star'></i>
+							<i className='icon-star'></i>
+							<i className='icon-star'></i>
+							<i className='icon-star'></i>
+							<i className='icon-star'></i>
+							<span>5/5</span>
+						</div>
+						<p class="ratings-comments-comment-text">Wszystko w porządku, porządny opis, długa gwarancja utwierdziły mnie w podjęciu decyzji o zakupie tutaj. Polecam!</p>
+						<div class="ratings-comments-comment-info">
+							<p class="ratings-comments-comment-info-author">23.05.2020 Bartłomiej, Opole, Polska</p>
+							<p class="ratings-comments-comment-info-vote">
+								Czy ta opinia była pomocna?
+								<span><i className='icon-thumbs-up-alt'></i> Tak (3)</span>
+								<span><i className='icon-thumbs-down'></i> Nie (0)</span>
+							</p>
+						</div>
+					</article>
+					<!-- Comment 3 -->
+					<article class="ratings-comments-comment">
+						<div class="ratings-comments-comment-rating">
+							<i className='icon-star'></i>
+							<i className='icon-star'></i>
+							<i className='icon-star'></i>
+							<i className='icon-star'></i>
+							<i className='icon-star'></i>
+							<span>5/5</span>
+						</div>
+						<p class="ratings-comments-comment-text">Całkiem sprawna wysyłka, towar szybko dostałem pod drzwi, polecam.</p>
+						<div class="ratings-comments-comment-info">
+							<p class="ratings-comments-comment-info-author">22.04.2020 Ola, Mazowsze Wlkp., Polska</p>
+							<p class="ratings-comments-comment-info-vote">
+								Czy ta opinia była pomocna?
+								<span><i className='icon-thumbs-up-alt'></i> Tak (3)</span>
+								<span><i className='icon-thumbs-down'></i> Nie (0)</span>
+							</p>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
 		
 		<!-- Scripts -->
 		<script src="js/buyForm_selectColor.js" async></script>
@@ -364,5 +493,6 @@
 		<script src="js/version_purchase.js" async></script>
 		<script src="js/faq_openMenu.js" async></script>
 		<script src="js/faq_openAnswer.js" async></script>
+		<script src="js/ratings_openMenu.js" async></script>
 	</body>
 </html>

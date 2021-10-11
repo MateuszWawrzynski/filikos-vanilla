@@ -1,0 +1,326 @@
+@import '../variables.scss';
+
+.ratings {
+	padding: 0 1.9em;
+	background-color: white;
+
+	@media (min-width: $desktop-width-transform) {
+		position: relative;
+		max-width: $desktop-wrapper-width;
+		margin: auto;
+		padding: 0;
+		padding-bottom: 9.2em;
+		transform: translateX(-1.6%);
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: -50%;
+			width: 200%;
+			height: 100%;
+			background-color: white;
+			z-index: -1;
+		}
+	}
+
+	.ratings-banner {
+		padding: 2.6em 0 2em;
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 1px solid $color-grayish;
+
+		@media (min-width: $desktop-width-transform) {
+			display: none;
+		}
+
+		> h1 {
+			pointer-events: none;
+			max-width: 90%;
+			font-size: 1.6em;
+			font-weight: normal;
+		}
+
+		> span {
+			pointer-events: none;
+			font-size: 1.6em;
+		}
+
+		&[data-menu-open='true'] ~ .ratings-content {
+			display: block;
+		}
+	}
+
+	.ratings-header {
+		display: none;
+		position: relative;
+		padding-bottom: .75em;
+		border-bottom: 1px solid $color-grayish;
+		font-size: 2.5em;
+		font-weight: normal;
+		text-align: center;
+		transform: translate(.5em, -.3em);
+
+		@media (min-width: $desktop-width-transform) {
+			display: block;
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 8.5em;
+			height: 1px;
+			background-color: orange;
+		}
+	}
+
+	.ratings-content {
+		display: none;
+		padding: 1.5em 1em;
+		border-bottom: 1px solid $color-grayish;
+
+		@media (min-width: $desktop-width-transform) {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+			margin-top: .6em;
+			padding: 0;
+			padding-top: 2em;
+			border: 0;
+		}
+
+		.ratings-content-marks {
+			text-align: center;
+		
+			@media (min-width: $desktop-width-transform) {
+				width: 24%;
+				margin-top: 3.3em;
+			}
+		
+			.ratings-content-marks-rating {
+				font-size: 2em;
+		
+				@media (min-width: $desktop-width-transform) {
+					font-size: 2.2em;
+					transform: translateX(-.5em);
+				}
+		
+				> i {
+					color: $color-orangeish;
+				}
+		
+				> span {
+					margin-left: .5em;
+					// line-height: 2em;
+					font-weight: bold;
+				}
+			}
+		
+			.ratings-content-marks-ratingsCounter {
+				margin-top: .3em;
+				font-size: 1.2em;
+		
+				@media (min-width: $desktop-width-transform) {
+					margin-top: .4em;
+					font-size: 1.3em;
+					transform: translateX(-.5em);
+				}
+			}
+		
+			> button {
+				margin: 1.3em 0;
+				width: 100%;
+				height: 4em;
+				border: 2px solid $color-blueish;
+				border-radius: 90px;
+				background-color: white;
+				outline: none;
+				font-size: 1.3em;
+				font-family: 'Noto Sans';
+				font-weight: bold;
+				color: $color-blueish;
+				cursor: pointer;
+		
+				@media (min-width: $desktop-width-transform) {
+					width: 95%;
+					margin: 1.7em 0 1.2em;
+		
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		
+			.ratings-content-marks-mark {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				cursor: pointer;
+		
+				transition-duration: .1s;
+				&:hover {
+					> .progressBar { height: 1em; }
+					font-weight: bold;	
+				}
+		
+				@media (min-width: $desktop-width-transform) {
+					margin-bottom: .2em;
+				}
+		
+				> span {
+					font-size: 1.2em;
+		
+					@media (min-width: $desktop-width-transform) {
+						font-size: 1.3em;
+					}
+				}
+		
+				> i {
+					color: $color-orangeish;
+		
+					@media (min-width: $desktop-width-transform) {
+						margin: 0 .5em;
+					}
+				}
+		
+				.ratings-content-marks-mark-progressBar {
+					width: 80%;
+					height: .7em;
+					background-color: $color-grayish;
+					border-radius: 90px;
+		
+					@media (min-width: $desktop-width-transform) {
+						width: 73%;
+					}
+		
+					> div {
+						height: 100%;
+						background-color: $color-blueish;
+						border-radius: 90px;
+					}
+				}
+		
+				> span:last-of-type {
+					width: 2em;
+					text-align: right;
+		
+					@media (min-width: $desktop-width-transform) {
+						width: 2em;
+						font-size: 1.2em;
+						margin-right: 1em;
+					}
+				}
+			}
+		
+			.ratings-content-marks-info {
+				margin-top: 1em;
+				font-size: 1.2em;
+				text-align: left;
+		
+				@media (min-width: $desktop-width-transform) {
+					margin-top: 1.6em;
+					font-size: 1.3em;
+				}
+			}
+		}
+
+		.ratings-comments {
+			margin-top: 3em;
+			border-top: 1px solid black;
+
+			@media (min-width: $desktop-width-transform) {
+				margin: 0;
+				border: 0;
+				width: 68.5%;
+			}
+
+			.ratings-comments-comment {
+				padding: 2em 0;
+				border-bottom: 1px solid $color-grayish;
+			
+				@media (min-width: $desktop-width-transform) {
+					padding: 1.7em 0;
+				}
+			
+				.ratings-comments-comment-rating {
+					font-size: 1.2em;
+			
+					> i {
+						color: $color-orangeish;
+			
+						@media (min-width: $desktop-width-transform) {
+							margin-right: .1em;
+						}
+					}
+			
+					> span {
+						margin-left: .5em;
+						font-weight: bold;
+			
+						@media (min-width: $desktop-width-transform) {
+							margin-left: .6em;
+						}
+					}
+				}
+			
+				.ratings-comments-comment-text {
+					margin: .8em 0;
+			
+					@media (min-width: $desktop-width-transform) {
+						margin: 1.3em 0 1em;
+						margin-left: .2em;
+						font-size: 1.2em;
+					}
+				}
+			
+				.ratings-comments-comment-info {
+					@media (min-width: $desktop-width-transform) {
+						display: flex;
+						justify-content: space-between;
+					}
+			
+					.ratings-comments-comment-info-author {
+						color: $color-blackish;
+			
+						@media (min-width: $desktop-width-transform) {
+							margin-top: .1em;
+							margin-left: .2em;
+							font-size: 1.2em;
+						}
+					}
+			
+					.ratings-comments-comment-info-vote {
+						margin-top: 1.5em;
+						text-align: right;
+			
+						@media (min-width: $desktop-width-transform) {
+							margin-top: .3em;
+							font-size: 1.3em;
+						}
+			
+						> span {
+							margin-left: .5em;
+							cursor: pointer;
+			
+							@media (min-width: $desktop-width-transform) {
+								margin-left: .8em;
+								font-size: .9em;
+							}
+			
+							&:first-of-type {
+								color: $color-blueish;
+							}
+			
+							&:hover {
+								border-bottom: 2px solid $color-orangeish;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
