@@ -36,7 +36,7 @@
     },
     {
       "uid": "dd39b028050ecee6a2c7e0d31de26529",
-      "css": "box-(2)",
+      "css": "box-2",
       "code": 59394,
       "src": "custom_icons",
       "selected": true,
@@ -50,7 +50,7 @@
     },
     {
       "uid": "23ad232a0c09a05839dd0c578f875ceb",
-      "css": "box-2",
+      "css": "box",
       "code": 59395,
       "src": "custom_icons",
       "selected": true,
@@ -120,7 +120,7 @@
     },
     {
       "uid": "6522e66da7a18c14f5f3c8b99806f7bd",
-      "css": "facebook-circular-logo-(2)",
+      "css": "facebook-circular-logo-2",
       "code": 59400,
       "src": "custom_icons",
       "selected": true,
@@ -148,7 +148,7 @@
     },
     {
       "uid": "6f6d451d188fcf77f3360548aab07b5e",
-      "css": "instagram-(7)",
+      "css": "instagram-7",
       "code": 59402,
       "src": "custom_icons",
       "selected": true,
@@ -246,7 +246,7 @@
     },
     {
       "uid": "f7bf82908ff4f99b60fffbd805e2e25a",
-      "css": "shipped-(2)",
+      "css": "shipped-2",
       "code": 59409,
       "src": "custom_icons",
       "selected": true,

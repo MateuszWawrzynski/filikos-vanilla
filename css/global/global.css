@@ -15,12 +15,6 @@ html body {
   font-family: "Noto Sans";
   overflow-x: hidden;
 }
-html body i {
-  font-family: "fontello";
-  font-size: 1em;
-  font-style: normal;
-  text-decoration: none;
-}
 html body input::-webkit-outer-spin-button,
 html body input::-webkit-inner-spin-button,
 html body input[type=number] {
