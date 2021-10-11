@@ -24,6 +24,7 @@
 		<link rel="stylesheet" href="css/bestsellers/bestsellers.css">
 		<link rel="stylesheet" href="css/faq/faq.css">
 		<link rel="stylesheet" href="css/ratings/ratings.css">
+		<link rel="stylesheet" href="css/footer/footer.css">
 	</head>
 	<body>
 		<!-- Header (TODO: needs pixel perfect improvement!) -->
@@ -525,7 +526,78 @@
 				</article>
 			</div>
 		</section>
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="footer-menu">
+				<div class="footer-menu-section">
+					<h1 class="footer-menu-section-title" data-menu-open='true' onClick="footer_openMenu(event)">Moje zamówienie</h1>
+					<div class="footer-menu-section-links">
+						<p><i className='icon-battery-level'></i><a href='/'>Status zamówienia</a></p>
+						<p><i className='icon-truck'></i><a href='/'>Śledzenie przesyłki</a></p>
+						<p><i className='icon-sad'></i><a href='/'>Chcę zareklamować towar</a></p>
+						<p><i className='icon-dollar-symbol'></i><a href='/'>Chcę zwrócić towar</a></p>
+						<p><i className='icon-box-2'></i><a href='/'>Chcę wymienić towar</a></p>
+					</div>
+				</div>
+				<div class="footer-menu-section">
+					<h1 class="footer-menu-section-title" data-menu-open='false' onClick="footer_openMenu(event)">Moje konto</h1>
+					<div class="footer-menu-section-links">
+						<p><i className='icon-register'></i><a href='/'>Zarejestruj się</a></p>
+						<p><i className='icon-menu'></i><a href='/'>Moje zamówienia</a></p>
+						<p><i className='icon-basket'></i><a href='/'>Koszyk</a></p>
+						<p><i className='icon-star'></i><a href='/'>Ulubione</a></p>
+						<p><i className='icon-clock'></i><a href='/'>Historia transakcji</a></p>
+						<p><i className='icon-cut'></i><a href='/'>Moje rabaty</a></p>
+						<p><i className='icon-mail'></i><a href='/'>Newsletter</a></p>
+					</div>
+				</div>
+				<div class="footer-menu-section">
+					<h1 class="footer-menu-section-title" data-menu-open='false' onClick="footer_openMenu(event)">Regulaminy</h1>
+					<div class="footer-menu-section-links">
+						<p><a href='/'>Informacje o sklepie</a></p>
+						<p><a href='/'>Wysyłka</a></p>
+						<p><a href='/'>Sposoby płatności i prowizji</a></p>
+						<p><a href='/'>Regulamin</a></p>
+						<p><a href='/'>Polityka prywatności</a></p>
+						<p><a href='/'>Odstąpienie od umowy</a></p>
+					</div>
+				</div>
+				<div class="footer-menu-section">
+					<h1 class="footer-menu-section-title">Informacje</h1>
+					<div class="footer-menu-section-info">
+						<div>
+							<a href='/' title='Przejdź do naszego profilu Facebook'><i className='icon-facebook-circular-logo-(2)'></i></a>
+							<a href='/' title='Przejdź do naszego profilu Instgram'><i className='icon-instagram-(7)'></i></a>
+						</div>
+						<div class="footer-menu-section-info-contact">
+							<h2><a href='callto:'>575848808</a></h2>
+							<h2><a href='mailto:'>sklep@filikos.pl</a></h2>
+							<p>pn-pt 8.00-16.00</p>
+							<p>sb 8:00-14:00</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-services">
+				<div class="footer-services-banks">
+					<a href='/'><img src='./assets/icons/banks/alior-bank.svg' alt='logo-alior-bank' /></a>
+					<a href='/'><img src='./assets/icons/banks/inteligo.svg' alt='logo-inteligo' /></a>
+					<a href='/'><img src='./assets/icons/banks/bank-pekao.svg' alt='logo-bank-pekao' /></a>
+					<a href='/'><img src='./assets/icons/banks/ipko.svg' alt='logo-ipko' /></a>
+					<a href='/'><img src='./assets/icons/banks/millennium.svg' alt='logo-millennium' /></a>
+					<a href='/'><img src='./assets/icons/banks/citi-handlowy.svg' alt='logo-citi-handlowy' /></a>
+					<a href='/'><img src='./assets/icons/banks/mbank.svg' alt='logo-mbank' /></a>
+					<a href='/'><img src='./assets/icons/banks/ing.svg' alt='logo-ing' /></a>
+				</div>
+				<div class="footer-services-banner">
+					<p class="footer-services-banner-address">Filikos , al. Kwiatowa 30, 71-065 Szczecin</p>
+					<div class="footer-services-banner-line"></div>
+					<img src='./assets/icons/powered_by_IdoSell_black.svg' alt='idosell' />
+				</div>
+			</div>
+		</footer>
 		
+
 		<!-- Scripts -->
 		<script src="js/buyForm_selectColor.js" async></script>
 		<script src="js/buyForm_purchase.js" async></script>
@@ -533,5 +605,6 @@
 		<script src="js/faq_openMenu.js" async></script>
 		<script src="js/faq_openAnswer.js" async></script>
 		<script src="js/ratings_openMenu.js" async></script>
+		<script src="js/footer_openMenu.js" async></script>
 	</body>
 </html>
