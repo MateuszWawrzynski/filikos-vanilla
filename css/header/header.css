@@ -43,7 +43,7 @@
 }
 @media (min-width: 1200px) {
   .header .header-content .header-content-logo {
-    height: 5.4rem;
+    height: 5.4em;
   }
 }
 .header .header-content .header-content-search {
@@ -56,10 +56,9 @@
   }
 }
 .header .header-content .header-content-search .header-content-search-searchInput {
-  margin-left: 5.8em;
-  padding: 0 1.6rem 0.4em;
-  height: 4.3rem;
-  width: 34.5rem;
+  margin-left: 4.8em;
+  padding: 0.9em 1.8em 1.4em 1.3em;
+  width: 25em;
   border: 2px solid #F6F6F6;
   border-radius: 90px;
   background-color: #F6F6F6;
@@ -71,9 +70,9 @@
 }
 .header .header-content .header-content-search > i {
   position: absolute;
-  top: 25%;
-  right: 4%;
-  font-size: 1.8rem;
+  top: 20%;
+  right: 3%;
+  font-size: 1.8em;
 }
 .header .header-content .header-content-nav {
   display: flex;
@@ -81,7 +80,7 @@
 }
 .header .header-content .header-content-nav > i {
   font-size: 1.9em;
-  margin: 0 0.65rem;
+  margin: 0 0.35em;
 }
 @media (min-width: 1200px) {
   .header .header-content .header-content-nav > i {
@@ -91,7 +90,7 @@
 .header .header-content .header-content-nav .header-content-nav-hamburger {
   width: 44px;
   height: 44px;
-  margin-left: 1.1rem;
+  margin-left: 1.1em;
   background-color: #346D99;
   border-radius: 50%;
   display: flex;
@@ -106,8 +105,8 @@
 }
 .header .header-content .header-content-nav .header-content-nav-hamburger .header-content-nav-hamburger-hamburgerLine {
   width: 50%;
-  height: 0.2rem;
-  margin: 0.2rem 0;
+  height: 0.2em;
+  margin: 0.2em 0;
   background-color: white;
 }
 .header .header-content .header-content-nav .header-content-nav-buttons {
@@ -115,32 +114,34 @@
 }
 @media (min-width: 1200px) {
   .header .header-content .header-content-nav .header-content-nav-buttons {
-    display: block;
-    line-height: 4.8em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 .header .header-content .header-content-nav .header-content-nav-buttons .header-content-nav-buttons-navBtn {
-  display: inline-block;
-  margin: 0 1.8em;
+  margin: 0 1.6em;
   text-decoration: none;
   color: black;
-  font-size: 1.1rem;
+  font-size: 1.1em;
   font-weight: bold;
 }
 .header .header-content .header-content-nav .header-content-nav-buttons .header-content-nav-buttons-navBtn:hover {
   border-bottom: 2px solid #FCB243;
 }
 .header .header-content .header-content-nav .header-content-nav-buttons .header-content-nav-buttons-cartBtn {
-  display: inline-block;
-  margin-left: 0.3em;
-  height: 5.3rem;
-  width: 15.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 0.6em;
+  height: 4em;
+  width: 11.5em;
   padding: 0 1em;
   border: none;
   border-radius: 90px;
   text-decoration: none;
   color: white;
-  font-size: 1.35rem;
+  font-size: 1.35em;
   font-weight: bold;
   background-color: #346D99;
   transition-duration: 0.2s;
@@ -152,15 +153,14 @@
   border-bottom: 1px solid #FCB243;
 }
 .header .header-content .header-content-nav .header-content-nav-buttons .header-content-nav-buttons-cartBtn > i {
-  display: inline-block;
-  font-size: 1.7rem;
+  margin-left: 0.15em;
+  font-size: 1.4em;
 }
 .header .header-content .header-content-nav .header-content-nav-buttons .header-content-nav-buttons-cartBtn .header-content-nav-buttons-cartBtn-value {
-  margin-left: 1.9em;
-  margin-right: 2.4em;
+  margin: 0 2em;
 }
 .header .header-content .header-content-nav .header-content-nav-buttons .header-content-nav-buttons-cartBtn .header-content-nav-buttons-cartBtn-icon {
-  font-size: 0.85rem;
+  font-size: 0.8em;
 }
 .header .header-menu {
   display: none;
@@ -169,12 +169,13 @@
   .header .header-menu {
     display: flex;
     justify-content: space-between;
-    margin-top: 0.5rem;
-    padding-bottom: 1.4rem;
+    width: 95.5%;
+    margin-top: 0.5em;
+    padding-bottom: 1.4em;
   }
 }
 .header .header-menu > span {
-  font-size: 1.4rem;
+  font-size: 1.4em;
   font-weight: bold;
   cursor: pointer;
   border-bottom: 2px solid white;
