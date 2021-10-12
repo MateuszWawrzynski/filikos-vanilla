@@ -22,7 +22,7 @@
 			flex-direction: row;
 			justify-content: space-between;
 			align-items: flex-start;
-			padding-left: 3.2em;
+			padding-left: 3.7em;
 			padding-right: .6em;
 		}
 
@@ -65,14 +65,15 @@
 
 		@media (min-width: $desktop-width-transform) {
 			margin-top: 1.9em;
-			padding-left: 4em;
+			margin-left: 0;
+			padding-left: 4.8em;
 		}
 		
 		.buyform-colors-options {
 			margin-top: 1.4em;
 
 			> img {
-				margin-right: 1em;
+				margin-right: .8em;
 				padding: .3em;
 				cursor: pointer;
 			}
@@ -88,7 +89,8 @@
 		margin-top: 2.2em;
 
 		@media (min-width: $desktop-width-transform) {
-			padding-left: 3.2em;
+			margin-top: 2.1em;
+			padding-left: 3.6em;
 		}
 
 		> p {
@@ -101,6 +103,10 @@
 			font-size: 1.3em;
 			color: black;
 
+			@media (min-width: $desktop-width-transform) {
+				margin-left: .1em;
+			}
+
 			transition-duration: .1s;
 			&:hover {
 				color: $color-orangeish;
@@ -112,7 +118,8 @@
 		margin-top: .8em;
 
 		@media (min-width: $desktop-width-transform) {
-			padding-left: 3.2em;
+			margin-top: .9em;
+			padding-left: 3.7em;
 		}
 
 		.buyform-price-value {
@@ -125,15 +132,13 @@
 		}
 
 		.buyform-price-discount {
-			margin-left: .4em;
 			font-size: 1.35em;
 			text-decoration: line-through;
 			color: $color-blackish;
 		}
 
 		.buyform-price-label {
-			// margin-top: .5em;
-			margin-left: .9em;
+			margin-left: .6em;
 			padding: .1em .9em;
 			border-radius: 90px;
 
@@ -142,6 +147,10 @@
 			color: white;
 			font-family: 'Amatic SC';
 			font-size: 1.8em;
+
+			@media (min-width: $desktop-width-transform) {
+				margin-left: .6em;
+			}
 
 			animation: buyform-blink 1.5s ease-out infinite alternate;
 			@keyframes buyform-blink {
@@ -159,7 +168,7 @@
 				display: inline-block;
 				font-size: 1.3em;
 				color: black;
-				margin-left: 1.6em;
+				margin-left: 1.4em;
 			}		
 
 			transition-duration: .1s;
@@ -189,15 +198,6 @@
 			}
 		}
 
-		.buyform-purchase-saveLater {
-			width: 5em;
-
-			transition-duration: .1s;
-			&:hover {
-				color: $color-orangeish;
-			}
-		}
-
 		.buyform-purchase-form {
 			margin: 1.6em 0 1.8em;
 
@@ -220,7 +220,7 @@
 
 			> button {
 				position: relative;
-				margin-left: 1em;
+				margin-left: .8em;
 				height: 4em;
 				padding: 0 5.5em;
 				border: none;
@@ -233,9 +233,9 @@
 				color: white;
 
 				@media (min-width: $desktop-width-transform) {
-					margin-left: 1em;
+					// margin-left: 1em;
 					margin-right: .8em;
-					padding: 0 4.95em 0 6.4em;
+					padding: 0 4.85em 0 6.5em;
 					cursor: pointer;
 					z-index: 1;
 
@@ -273,12 +273,23 @@
 				}
 			}
 		}
+
+		.buyform-purchase-saveLater {
+			width: 5em;
+			font-size: 1.3em;
+			color: black;
+
+			transition-duration: .1s;
+			&:hover {
+				color: $color-orangeish;
+			}
+		}
 	}
 
 	.buyform-info {
 		border-top: 1px solid $color-grayish;
 		border-bottom: 1px solid $color-grayish;
-		padding: 1.6em 0;
+		padding: 1.65em 0;
 		list-style-type: none;
 		font-size: 1.2em;
 
@@ -312,7 +323,7 @@
 			> i {
 				font-family: 'fontello';
 				font-style: normal;
-				font-size: 1.5em;
+				font-size: 1.6em;
 				width: 1.8em;
 			}
 			
