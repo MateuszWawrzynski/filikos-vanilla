@@ -30,15 +30,15 @@
   text-decoration: none;
 }
 .breadcrumbs .breadcrumbs-mobile .breadcrumbs-mobile-backwards .breadcrumbs-mobile-backwards-icon {
-  margin-right: 1.3em;
+  margin-right: 1em;
 }
 .breadcrumbs .breadcrumbs-mobile .breadcrumbs-mobile-location .breadcrumbs-mobile-location-category {
-  margin-left: 0.7em;
-  margin-right: 0.4em;
+  margin-left: 0.4em;
   text-decoration: underline;
 }
 .breadcrumbs .breadcrumbs-mobile .breadcrumbs-mobile-location .breadcrumbs-mobile-location-icon {
-  margin-right: 0.7em;
+  margin-left: 0.3em;
+  margin-right: 0.4em;
 }
 .breadcrumbs .breadcrumbs-desktop {
   display: none;
