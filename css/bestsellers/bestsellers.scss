@@ -2,20 +2,11 @@
 
 .bestsellers {
 	margin-top: 3.8em;
-	padding-bottom: 1em;
+	padding-bottom: .7em;
 	text-align: center;
 
-	&.second {
-		padding-bottom: .8em;
-
-		.content {
-			padding-bottom: 0;
-		}
-		
-		@media (min-width: $desktop-width-transform) {
-			transform: translateY(-.8em);
-			padding-bottom: 4.6em;
-		}
+	@media (min-width: $desktop-width-transform) {
+		padding-bottom: 1em;
 	}
 
 	.bestsellers-header-mobile {
@@ -39,12 +30,6 @@
 			height: 1px;
 			background-color: orange;
 		}
-
-		// @media (min-width: $desktop-width-transform) {
-		// 	margin-top: 2.25em;
-		// 	padding-left: 0;
-		// 	transform: translateX(-.25em);
-		// }
 	}
 
 	.bestsellers-header-desktop {
@@ -135,5 +120,33 @@
 				}
 			}
 		}
+	}
+}
+
+.second {
+	@extend .bestsellers;	
+	padding-bottom: 1.1em;
+	
+	@media (min-width: $desktop-width-transform) {
+		transform: translateY(-.8em);
+		padding-bottom: 4.6em;
+	}
+
+	.bestsellers-content {
+		padding-bottom: 0;
+
+		.bestsellers-content-bestseller {
+			> a {
+				> p {
+					@media (min-width: $desktop-width-transform) {
+						padding: 1.2em 3.1em 0;
+					}
+				}
+			}
+		}
+	}
+
+	.bestsellers-header-mobile {
+		padding-left: .3em;
 	}
 }
