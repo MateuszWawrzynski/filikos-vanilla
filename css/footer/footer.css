@@ -90,7 +90,7 @@
   text-decoration: underline;
 }
 .footer .footer-menu .footer-menu-section .footer-menu-section-info {
-  margin: 0.7em 0;
+  margin: 0 0.7em 0;
 }
 @media (min-width: 1200px) {
   .footer .footer-menu .footer-menu-section .footer-menu-section-info {
@@ -101,7 +101,6 @@
   text-decoration: none;
 }
 .footer .footer-menu .footer-menu-section .footer-menu-section-info a > i {
-  margin: 0 0.12em;
   font-size: 4.8em;
   color: #F6C64B;
 }
@@ -113,7 +112,7 @@
   }
 }
 .footer .footer-menu .footer-menu-section .footer-menu-section-info .footer-menu-section-info-contact {
-  margin-top: 2em;
+  margin-top: 1.2em;
 }
 @media (min-width: 1200px) {
   .footer .footer-menu .footer-menu-section .footer-menu-section-info .footer-menu-section-info-contact {

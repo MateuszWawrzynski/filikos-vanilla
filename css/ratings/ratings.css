@@ -105,14 +105,18 @@
 @media (min-width: 1200px) {
   .ratings .ratings-content .ratings-content-marks .ratings-content-marks-rating {
     font-size: 2.2em;
-    transform: translateX(-0.5em);
+    transform: translateX(-0.4em);
   }
 }
 .ratings .ratings-content .ratings-content-marks .ratings-content-marks-rating > i {
   color: #FCB243;
 }
+.ratings .ratings-content .ratings-content-marks .ratings-content-marks-rating > i::before {
+  margin: 0;
+  margin-right: 0.15em;
+}
 .ratings .ratings-content .ratings-content-marks .ratings-content-marks-rating > span {
-  margin-left: 0.5em;
+  margin-left: 0.3em;
   font-weight: bold;
 }
 .ratings .ratings-content .ratings-content-marks .ratings-content-marks-ratingsCounter {
@@ -247,19 +251,13 @@
 .ratings .ratings-content .ratings-comments .ratings-comments-comment .ratings-comments-comment-rating > i {
   color: #FCB243;
 }
-@media (min-width: 1200px) {
-  .ratings .ratings-content .ratings-comments .ratings-comments-comment .ratings-comments-comment-rating > i {
-    margin-right: 0.1em;
-  }
+.ratings .ratings-content .ratings-comments .ratings-comments-comment .ratings-comments-comment-rating > i::before {
+  margin: 0;
+  margin-right: 0.25em;
 }
 .ratings .ratings-content .ratings-comments .ratings-comments-comment .ratings-comments-comment-rating > span {
   margin-left: 0.5em;
   font-weight: bold;
-}
-@media (min-width: 1200px) {
-  .ratings .ratings-content .ratings-comments .ratings-comments-comment .ratings-comments-comment-rating > span {
-    margin-left: 0.6em;
-  }
 }
 .ratings .ratings-content .ratings-comments .ratings-comments-comment .ratings-comments-comment-text {
   margin: 0.8em 0;
@@ -303,7 +301,6 @@
 }
 @media (min-width: 1200px) {
   .ratings .ratings-content .ratings-comments .ratings-comments-comment .ratings-comments-comment-info .ratings-comments-comment-info-vote > span {
-    margin-left: 0.8em;
     font-size: 0.9em;
   }
 }

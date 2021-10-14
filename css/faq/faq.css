@@ -207,7 +207,7 @@
 }
 @media (min-width: 1200px) {
   .faq .faq-content .faq-content-more > i {
-    top: 2%;
+    top: -12.5%;
     right: -19.5%;
     font-size: 17em;
   }

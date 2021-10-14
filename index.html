@@ -384,7 +384,7 @@
 							<span>5</span>
 							<i class='icon-star'></i>
 							<div class="ratings-content-marks-mark-progressBar">
-								<div style="width: 84%;"></div>
+								<div style="width: 82%;"></div>
 							</div>
 							<span>(21)</span>
 						</div>
@@ -392,7 +392,7 @@
 							<span>4</span>
 							<i class='icon-star'></i>
 							<div class="ratings-content-marks-mark-progressBar">
-								<div style="width: 34%;"></div>
+								<div style="width: 31%;"></div>
 							</div>
 							<span>(5)</span>
 						</div>
@@ -416,7 +416,7 @@
 							<span>1</span>
 							<i class='icon-star'></i>
 							<div class="ratings-content-marks-mark-progressBar">
-								<div style="width: 8%;"></div>
+								<div style="width: 6%;"></div>
 							</div>
 							<span>(1)</span>
 						</div>
@@ -474,7 +474,7 @@
 							<i class='icon-star'></i>
 							<span>5/5</span>
 						</div>
-						<p class="ratings-comments-comment-text">Całkiem sprawna wysyłka, towar szybko dostałem pod drzwi, polecam.</p>
+						<p class="ratings-comments-comment-text">Całkiem sprawa wysyłka, towar szybko dostałem pod drzwi, polecam.</p>
 						<div class="ratings-comments-comment-info">
 							<p class="ratings-comments-comment-info-author">22.04.2020 Ola, Mazowsze Wlkp., Polska</p>
 							<p class="ratings-comments-comment-info-vote">
@@ -606,5 +606,12 @@
 		<script src="js/faq_openAnswer.js" async></script>
 		<script src="js/ratings_openMenu.js" async></script>
 		<script src="js/footer_openMenu.js" async></script>
+		
+		<script>
+			// avoid page reload to see buttons animations
+			document.querySelectorAll('button').forEach(item => {
+				item.addEventListener('click', e => e.preventDefault())
+			})
+		</script>
 	</body>
 </html>

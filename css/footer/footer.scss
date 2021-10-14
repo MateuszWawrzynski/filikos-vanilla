@@ -94,7 +94,7 @@
 			}
 
 			.footer-menu-section-info {
-				margin: .7em 0;
+				margin: 0 .7em 0;
 
 				@media (min-width: $desktop-width-transform) {
 					margin: .9em 0;
@@ -104,7 +104,7 @@
 					text-decoration: none;
 
 					> i {
-						margin: 0 .12em;
+						// TODO: stick icons closer
 						font-size: 4.8em;
 						color: $color-yellowish;
 
@@ -117,7 +117,7 @@
 				}
 
 				.footer-menu-section-info-contact {
-					margin-top: 2em;
+					margin-top: 1.2em;
 
 					@media (min-width: $desktop-width-transform) {
 						margin-top: 2.5em;

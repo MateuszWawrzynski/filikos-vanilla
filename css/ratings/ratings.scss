@@ -105,16 +105,21 @@
 		
 				@media (min-width: $desktop-width-transform) {
 					font-size: 2.2em;
-					transform: translateX(-.5em);
+					transform: translateX(-.4em);
 				}
 		
 				> i {
 					color: $color-orangeish;
+
+					&::before {
+						// icon fix
+						margin: 0;
+						margin-right: .15em; 
+					}
 				}
 		
 				> span {
-					margin-left: .5em;
-					// line-height: 2em;
+					margin-left: .3em;
 					font-weight: bold;
 				}
 			}
@@ -250,19 +255,16 @@
 			
 					> i {
 						color: $color-orangeish;
-			
-						@media (min-width: $desktop-width-transform) {
-							margin-right: .1em;
+
+						&::before {
+							margin: 0;
+							margin-right: .25em;
 						}
 					}
 			
 					> span {
 						margin-left: .5em;
 						font-weight: bold;
-			
-						@media (min-width: $desktop-width-transform) {
-							margin-left: .6em;
-						}
 					}
 				}
 			
@@ -306,7 +308,6 @@
 							cursor: pointer;
 			
 							@media (min-width: $desktop-width-transform) {
-								margin-left: .8em;
 								font-size: .9em;
 							}
 			
