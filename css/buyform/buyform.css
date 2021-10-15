@@ -9,7 +9,7 @@
 @media (min-width: 1200px) {
   .buyform {
     grid-area: buyform;
-    margin-left: 0.6em;
+    margin-left: 1.6em;
     max-height: 477px;
     padding: 0;
     padding-top: 0.5em;
@@ -25,7 +25,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    padding-left: 3.7em;
+    padding-left: 3.1em;
     padding-right: 0.6em;
   }
 }
@@ -67,7 +67,7 @@
   .buyform .buyform-colors {
     margin-top: 1.9em;
     margin-left: 0;
-    padding-left: 4.8em;
+    padding-left: 4.1em;
   }
 }
 .buyform .buyform-colors .buyform-colors-options {
@@ -88,7 +88,7 @@
 @media (min-width: 1200px) {
   .buyform .buyform-availability {
     margin-top: 2.1em;
-    padding-left: 3.6em;
+    padding-left: 3em;
   }
 }
 .buyform .buyform-availability > p {
@@ -115,7 +115,7 @@
 @media (min-width: 1200px) {
   .buyform .buyform-price {
     margin-top: 0.9em;
-    padding-left: 3.7em;
+    padding-left: 3.1em;
   }
 }
 .buyform .buyform-price .buyform-price-value {
@@ -196,7 +196,7 @@
 }
 @media (min-width: 1200px) {
   .buyform .buyform-purchase {
-    padding-left: 3.2em;
+    padding-left: 3em;
     padding-bottom: 0;
     display: flex;
     align-items: center;
@@ -310,7 +310,7 @@
 @media (min-width: 1200px) {
   .buyform .buyform-info {
     padding-top: 0;
-    padding-left: 3.1em;
+    padding-left: 2.5em;
     border: 0;
   }
 }

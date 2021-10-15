@@ -105,7 +105,7 @@
 					<span class="gallery-bestseller">BESTSELLER</span>
 					<img class="gallery-photo" src='./assets/photos/photo_1.png' alt='gallery' />	
 				</section>
-				<!-- BuyForm (TODO: fix form styling!) -->
+				<!-- BuyForm -->
 				<section class="buyform">
 					<div class="buyform-header">
 						<div class="buyform-header-title">
@@ -138,7 +138,7 @@
 						<a class="buyform-purchase-instalments" href='/'>Kup na raty</a>
 						<form class="buyform-purchase-form">
 							<input class="buyform-purchase-form-quantity" type='number' value='1' />
-							<button onClick="buyForm_purchase(event)" title='Dodaj ten produkt do koszyka'>DODAJ OD KOSZYKA</button>
+							<button onClick="buyForm_purchase(event)" title='Dodaj ten produkt do koszyka'>DODAJ DO KOSZYKA</button>
 						</form>
 						<a class="buyform-purchase-saveLater" href='/'>Do listy zakupowej</a>
 					</div>
@@ -605,10 +605,9 @@
 		<script src="js/faq_openMenu.js" async></script>
 		<script src="js/faq_openAnswer.js" async></script>
 		<script src="js/ratings_openMenu.js" async></script>
-		<script src="js/footer_openMenu.js" async></script>
-		
+		<script src="js/footer_openMenu.js" async></script>		
 		<script>
-			// avoid page reload to see buttons animations
+			// avoid page reloading after form submit to see buttons animations
 			document.querySelectorAll('button').forEach(item => {
 				item.addEventListener('click', e => e.preventDefault())
 			})

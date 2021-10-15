@@ -10,7 +10,6 @@
 	@media (min-width: $desktop-width-transform) {
 		grid-area: gallery;
 		margin-right: .8em;
-		// margin-right: 1.6em;
 		max-height: 477px;
 		padding: 0;
 		padding-left: .2em;
@@ -76,8 +75,8 @@
 			justify-content: center;
 			align-items: center;
 			position: absolute;
-			top: 4.7%;
-			right: 4.5%;
+			top: 4.6%;
+			right: 3.6%;
 			width: 70px;
 			height: 70px;
 			border-radius: 90px;
@@ -86,11 +85,11 @@
 			font-family: 'Amatic SC';
 			font-size: 2rem;
 			font-weight: bold;
+
+			animation: bestseller-blink 1.5s ease-in infinite alternate;
+			@keyframes bestseller-blink {
+				to { transform: scale(1.2); }
+			}
 		}
-	
-		@keyframes bestseller-blink {
-			to { transform: scale(1.2); }
-		}
-		animation: bestseller-blink 1.5s ease-in infinite alternate;
 	}
 }
